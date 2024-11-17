@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>html{background-color: black; visibility: hidden; opacity: 0;}</style>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="libs.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h3>Kalkulator i wizualizacja zachowania energii</h3>
+      <p>Mateusz Lisowski 254803</p>
+    </header>
+    <section id="top-left">
+      <h3>Wizualizacja</h3>
+      <div id="animation-container"></div>
+      <p id="simulation-comment"></p>
+    </section>
+    <section id="top-right">
+      <div id="options-container">
+        <p>Kąt nachylenia równi <span>[∠°]</span></p>
+        <input type="text" id="angle" placeholder="30">
+        <p>Prędkość Początkowa <span> V [<span style="vertical-align: super;">m</span>/<span style="vertical-align: sub;">s</span>]</span></p>
+        <input type="text" id="v" placeholder="10">
+        <p>Współczynnik tarcia <span>μ</span></p>
+        <input type="text" id="f" placeholder="0.04">
+        <p>Dokładność <span>eps</span></p>
+        <input type="text" id="eps" placeholder="0.01">
+      </div>
+    </section>
+    <section id="bottom">
+      <p>Kontrola wizualizacji</p>
+      <div id="action-container">
+        <button id="start-stop" class="start">Start</button>
+        <button id="reset">Reset</button>
+        <button id="skip">Przelicz</button>
+      </div>
+      <p>Kontrola predkości wizualizacji</p>
+      <p id="simulation-speed">
+        x1 <input type="range" id="simulation-speed-input" min="1" max="5" value="1"> x5
+      </p>
+      <div id="bounce-chart-container">
+        <canvas id="bounce-chart" aria-label="Hello ARIA World" role="img"></canvas>
+      </div>
+      <footer>
+        Mateusz Lisowski 254803, Politechnika Łódzka, listopad 2024<br>
+        Projekty Open Source: 
+        <a href="https://svgjs.dev/docs/3.2/" target="_blank" rel="noopener noreferrer">SVG.js</a>  
+        <a href="https://www.chartjs.org/" target="_blank" rel="noopener noreferrer">chart.js</a><br>
+        <a href="https://github.com/BlacksQare/Fizyka2024">Repozytorium na GitHubie</a>
+
+      </footer>
+    </section>
+  </main>
+  <div id="alert">
+    <div id="alert-container">
+    </div>
+  </div>
+  <div id="calculating-placeholder" class="placeholder">
+    <h2>Przeliczanie</h2>
+    <div id="current-log">...</div>
+    <div id="loader"></div>
+    <button id="alert-close">Anuluj</button>
+  </div>
+  <div id="message-placeholder" class="placeholder">
+    <h2>Uwaga</h2>
+    <div id="current-message"></div>
+    <button id="alert-close">Zamknij</button>
+  </div>
+</body>
+</html>
