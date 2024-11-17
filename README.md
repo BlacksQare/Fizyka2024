@@ -5,15 +5,16 @@ Praca na dodatkowe punkty na kolokwium. Zadanie na którym opiera się praca: *[
 - Wizualizacja poruszania się klocka.
 
 - Stworzenie nowoczesnego interfejsu użytkownika.
+
 - Rysowanie odpowiednich wykresów (prędkości po odbiciu, wysokości na którą wzbił się bloczek).
 
 ## Krótki opis sekcji aplikacji
 #### Sekcja wizualizacji:
-- W założeniach rampa jest nieskończenie dluga, jednak w celach wizualizacji jesj długość jest dostowywana do maksymalnych wartości osiągniętych przez bloczek, umożliwiając graficzne przedstawienie ruchu.
+- W założeniach rampa jest nieskończenie długa, jednak w celach wizualizacji jej długość jest dostosowywana do maksymalnych wartości osiągniętych przez bloczek, umożliwiając graficzne przedstawienie ruchu.
 
-- Droga, wysokość i prędkość bloczka jest przeliczana na podstawie algorytmu, oraz prezentowana na wizualizacji.
+- Droga, wysokość i prędkość bloczka są przeliczana na podstawie algorytmu, oraz prezentowana na wizualizacji.
 
-- **Wizualizacja nie odzwierciedla rzeczywistych prędkości bloczka ani rzeczywistego upływu czasu!** Te wartości są jedynie ustawione w celu poglądowym i nie odpowiadają rzeczywistości! Prędkość wizualizaji jest mozliwa do dostosowania suwakiem poniżej tej sekcji.
+- **Wizualizacja nie odzwierciedla rzeczywistych prędkości bloczka ani rzeczywistego upływu czasu!** Te wartości są jedynie w celu poglądowym i nie odpowiadają rzeczywistości! Prędkość wizualizaji jest możliwa do dostosowania suwakiem poniżej tej sekcji.
 
 #### Sekcja wpisywania wartości:
 - Filtry na wejścia są ograniczone, aby uniemożliwić wprowadzanie zbyt długich wartości do przeliczenia oraz z uwagi na swoją zasadę działania mogą one przyjmować wartości pozornie zerowe.
