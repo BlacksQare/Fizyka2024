@@ -382,15 +382,21 @@ footer{
 }
 
 @media (max-width: 800px), (max-height: 700px){
-  #top-left, #top-right{
+  #action-container{
+    width: 280px;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  #top-left, #top-right, #bottom{
     width: 100%;
+    height: 100%;
   }
   #top-right{
     top: 70%;
     left: 0;
   }
   #bottom{
-    top: calc(120% + 72px);
+    top: calc(150% + 72px);
   }
 }
 
