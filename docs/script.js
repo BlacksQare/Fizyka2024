@@ -265,18 +265,18 @@ window.onload=async ()=>{
       datasets: [{
         label: 'Maksymalna wysokość jaką osiągnął bloczek (m)',
         data: [],
-        borderWidth: 3,
-        borderColor: style.getPropertyValue('--color-blue'),
-        lineTension: 0.3,
-        pointStyle: false
+        showLine: false,
+        backgroundColor: style.getPropertyValue('--color-blue'),
+        pointStyle: 'circle',
+        pointRadius: 4
       },
       {
         label: 'Predkość uzyskana po odbiciu (m/s)',
         data: [],
-        borderWidth: 3,
-        borderColor: style.getPropertyValue('--color-green'),
-        lineTension: 0.3,
-        pointStyle: false
+        showLine: false,
+        backgroundColor: style.getPropertyValue('--color-green'),
+        pointStyle: 'circle',
+        pointRadius: 4
       }
     ]
     },
