@@ -283,7 +283,15 @@ window.onload=async ()=>{
     options: {
       scales: {
         y: {
-          beginAtZero: true
+          beginAtZero: true,
+          grid: {
+            color: '#191919'
+          }
+        },
+        x: {
+          grid: {
+            color: '#191919'
+          }
         }
       }
     }
